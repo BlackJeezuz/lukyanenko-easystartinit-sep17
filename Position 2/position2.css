@@ -1,0 +1,42 @@
+.main {
+	width: 400px;
+	height: 400px;
+	background-color: rgb(196,223,154);
+	position: relative;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background-color: rgb(247,148,29);
+	position: absolute;
+}
+
+.first {
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+} 
+
+.second {
+	right: 0;
+	margin-right: -50px;
+	margin-top: -50px;
+	top: 50%;
+}
+
+.thirth {
+	bottom: 0;
+	left: 50%;
+	margin-bottom: -50px;
+	margin-left: -50px;
+}
+
+.fourth {
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
