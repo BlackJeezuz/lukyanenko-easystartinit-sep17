@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+  .social_wrap {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form_wrap{
+    width: 100%;
+    border-left: none;
+  }
+  .line {
+  	border: 1px solid rgba(0, 0, 0,.149);
+		display: visible;
+		width: 70%;
+		margin: 0 auto;
+  }
+}
