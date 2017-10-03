@@ -37,18 +37,18 @@
 }
 
 	.tangle {
-		border-bottom: 15px solid #fff;
-		border-left: 15px solid transparent;
-		border-right: 15px solid transparent;
+		border: 15px solid;
+		border-color: #fff transparent;
+		border-top: none;
 		width: 15px;
 		margin-left: 24px;
 	}
 
 	.tangle-dark {
 		width: 15px;
-		border-left: 15px solid #444444;
-		border-top: 15px solid transparent;
-		border-bottom: 15px solid transparent;
+		border: 15px solid;
+		border-color: transparent #444444;
+		border-right: none;
 		display: inline-block;
 		position: relative;
 		top: -100px;
