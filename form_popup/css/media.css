@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+  .b-form-wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .b-form-content {
+    flex-direction: column-reverse;
+    padding: 2.7em 4em ;
+  }
+  .b-form-content:after {
+    display: none;
+  }
+  .b-social {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  .b-form{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .b-line {
+    border: 1px solid rgba(0, 0, 0,.149);
+    display: visible;
+    width: 90%;
+    margin: 20px auto 0 auto;
+  }
+}
