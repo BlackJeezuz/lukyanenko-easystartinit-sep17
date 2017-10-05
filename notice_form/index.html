@@ -2,49 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Notify</title>
+	<title>Notice</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-	<div class="not-wrap">
-
-
-		<div class="tangle"></div>
-
-		<div class="notice">
-			
-				<div class="person-img"></div>
-				<div class="text">
-					<p>Username</p>
-					<p>25 years</p>
-					<p>London, UK</p>
-				</div>
-
-				<button>message</button>
-				<button>Like photo</button>
-
-		</div>
-
-
-		<div class="notice not-dark">
-
-			<div class="person-img bg-dark"></div>
-			<div class="text">
-				<p class="font-light">Username</p>
-				<p>25 years</p>
-				<p>London, UK</p>
+	<div class="wrapper">
+		<div class="b-notice">
+			<div class="b-notice__triangle"></div>
+			<div class="b-notice__img"></div>
+			<div class="b-notice__content">
+				<p class="content__p">Username</p>
+				<p class="content__p">25 years</p>
+				<p class="content__p">London, UK</p>
 			</div>
-
-			<button>message</button>
-			<button class="bg-dark font-light">Like photo</button>
-			
+			<button class="b-notice__btn">Message</button>
+			<button class="b-notice__btn">Like photo</button>
 		</div>
 
-		<div class="tangle-dark"></div>
-
-
+		<div class="b-notice b-notice--inverse">
+			<div class="b-notice__triangle"></div>
+			<div class="b-notice__img"></div>
+			<div class="b-notice__content">
+				<p class="content__p">Username</p>
+				<p class="content__p">25 years</p>
+				<p class="content__p">London, UK</p>
+			</div>
+			<button class="b-notice__btn">Message</button>
+			<button class="b-notice__btn">Like photo</button>
+		</div>
 	</div>
-	
 </body>
 </html>
