@@ -1,0 +1,62 @@
+.about {
+  @extend %flex-sb;
+
+  &__skills {
+    width: 50%;
+  }
+
+  &__person {
+    margin: 0;
+  }
+
+  &__content {
+    max-width: 400px;
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__caption {
+    margin: 5px 0 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.skills-list {
+  color: #fff;
+  &__item {
+    @extend %flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__name,
+  &__percent {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  &__name {
+    width: 110px;
+    background-color: $main-color;
+    text-align: center;
+  }
+
+  &__percent {
+    background-color: $dark-bg;
+    flex: 1;
+    text-align: right;
+
+    &-line {
+      padding-right: 20px;
+      background-color: $dark-main;
+    }
+  }
+}

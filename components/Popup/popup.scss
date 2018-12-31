@@ -1,0 +1,49 @@
+.overlay {
+  @extend %stretch;
+  position: fixed;
+  @extend %flex-c-c;
+  background-color: rgba(#000, .5);
+  z-index: 20;
+  transition: opacity .3s ease;
+}
+
+.popup {
+  max-width: 500px;
+  width: 100%;
+  height: 90vh;
+  background-color: #fff;
+  transition: all .3s ease;
+  &__content {
+    padding: 30px 60px 30px 60px;
+  }
+}
+
+.slider {
+  position: relative;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    @extend %bg-cover;
+  }
+
+  .VueCarousel-navigation {
+    button {
+      top: unset;
+      bottom: 0;
+      transform: none;
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(#000, .5);
+      color: #fff;
+      text-align: center;
+      &:first-child {
+        left: 0;
+      }
+      &:last-child {
+        right: 0;
+      }
+    }
+  }
+}
