@@ -1,0 +1,105 @@
+.overlay {
+  @extend %stretch;
+  position: fixed;
+  @extend %flex-c-c;
+  background-color: rgba(#000, .5);
+  z-index: 20;
+  transition: opacity .3s ease;
+}
+
+.popup {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  height: 90vh;
+  background-color: #fff;
+  transition: all .3s ease;
+  @media only screen and (max-width : 1040px) {
+    height: 100%;
+    max-height: 900px;
+  }
+  &__content {
+    padding: 30px 60px 30px 60px;
+    @media only screen and (max-width : 1040px) {
+      padding: 20px 20px 40px 20px;
+      height: 50%;
+    }
+  }
+  &__header {
+    height: 50%;
+  }
+  &__close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.5;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 3px;
+      background-color: $active-color;
+    }
+
+    &:before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  &__img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    @extend %bg-cover;
+
+  }
+  .VueCarousel-navigation {
+    button {
+      top: unset;
+      bottom: 0;
+      transform: none;
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(#000, .5);
+      color: #fff;
+      text-align: center;
+      &:first-child {
+        left: 0;
+      }
+      &:last-child {
+        right: 0;
+      }
+    }
+  }
+}
+
+.slider,
+.VueCarousel-wrapper,
+.VueCarousel-inner,
+.slider__item,
+.slider__img {
+  height: 100% !important;
+}
