@@ -12,13 +12,12 @@
             <img class="about__img" src="~/static/me.jpg" alt="Ruslan Lukianenko">
             <figcaption class="about__caption">{{ $t('about.figcaption') }}</figcaption>
           </figure>
-          <p>{{ $t('about.position') }} <a href="#" class="link">{{ $t('about.currentJob') }}</a> {{ $t('about.location') }}.<br>{{ $t('about.text') }} <a href="./static/files/RuslanL_CV.pdf" class="link" target="_blank">{{ $t('about.cv') }}</a></p>
+          <p>{{ $t('about.position') }} <a href="#" class="link">{{ $t('about.currentJob') }}</a> {{ $t('about.location') }}.<br>{{ $t('about.text') }} <a href="./files/RuslanL_CV.pdf" class="link" target="_blank">{{ $t('about.cv') }}</a></p>
         </div>
         <div
           class="about__skills"
           data-aos="fade-left"
           data-aos-anchor-placement="top-center"
-          
         >
           <ul
             class="skills-list"

@@ -43,6 +43,25 @@
   },
   "projects": {
     "look": "Learn more",
-    "all": "All"
+    "all": "All",
+    "technologies": "Technologies:",
+    "tools": "Tools:",
+    "view": "Visit",
+    "astorun": {
+      "title": "Online shop",
+      "description": "<p>Astoran it is a small online sports store created using Vue.js at Nuxt.js platform for server side rendering.</p><p>Designed for the instagram target audience, through which the promotion will be carried out</p>"
+    },
+    "anycash": {
+      "title": "Online wallet",
+      "description": "<p>Anycash - your own online wallet.</p><p>Created using Vue.js at Nuxt.js platform for server side rendering. Using the Any.cash service, you can make exchanges and cryptocurrency conversions. There is a bonus system and an affiliate program.</p>"
+    },
+    "k2k": {
+      "title": "Fast credits and transfers",
+      "description": "<p>K2K it is a project for instant online credits and transfers.</p><p>The site was created without js frameworks. Only jQuery was used from libraries.</p>"
+    },
+    "express-finance": {
+      "title": "Instant credits online",
+      "description": "<p>Express Finance - online lending and transfer system. More details about the possibilities you can see in your account.</p><p>The site is created with pure js. Only jQuery was used from libraries.</p>"
+    }
   }
 }

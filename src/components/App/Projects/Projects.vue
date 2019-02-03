@@ -84,37 +84,60 @@ export default {
     projects () {
       return [{
         name: 'Astorun',
-        subtitle: 'Vue.js',
         filter: 'vue',
-        image: require('~/assets/images/Mogo.jpg'),
-        slides: [{
-          img: require('~/assets/images/Mogo.jpg'),
-          title: 'Astorun',
-          info: '<p>Astorun it is the shop</p>'
-        }, {
-          img: require('~/assets/images/Mogo.jpg'),
-          title: 'Astorun',
-          info: '<p>Astorun is the best</p>'
-        }, {
-          img: require('~/assets/images/Mogo.jpg'),
-          title: 'Astorun',
-          info: '<p>Astorun is adssad</p>'
-        }]
+        image: require('~/assets/images/astorun/logo.png'),
+        images: [
+          require('~/assets/images/astorun/main.jpg'),
+          require('~/assets/images/astorun/bascet.jpg'),
+          require('~/assets/images/astorun/collection.jpg')
+        ],
+        subtitle: this.$t('projects.astorun.title'),
+        description: this.$t('projects.astorun.description'),
+        technologies: 'HTML, CSS, SCSS, Vue.js, Nuxt.js, Vuex, vue-i18n, Axios',
+        tools: 'Webpack, NPM, Git, Photoshop',
+        link: 'https://blackjeezuz.github.io/astorun/'
+      }, {
+        name: 'Any.cash',
+        filter: 'vue',
+        image: require('~/assets/images/anycash/logo.jpg'),
+        images: [
+          require('~/assets/images/anycash/main.jpg'),
+          require('~/assets/images/anycash/tarif.jpg'),
+          require('~/assets/images/anycash/bonus.jpg')
+        ],
+        subtitle: this.$t('projects.anycash.title'),
+        description: this.$t('projects.anycash.description'),
+        technologies: 'HTML, CSS, SCSS, Vue.js, Nuxt.js, Vuex, vue-i18n, Axios',
+        tools: 'Webpack, NPM, Git, Symply, Jira',
+        link: 'https://any.cash/ru/'
+      }, {
+        name: 'K2K',
+        filter: 'js',
+        image: require('~/assets/images/k2k/logo.jpg'),
+        images: [
+          require('~/assets/images/k2k/main.jpg'),
+          require('~/assets/images/k2k/personal.jpg'),
+          require('~/assets/images/k2k/credit.jpg')
+        ],
+        subtitle: this.$t('projects.k2k.title'),
+        description: this.$t('projects.k2k.description'),
+        technologies: 'HTML, CSS, SCSS, jQuery, jQuery UI, Ajax',
+        tools: 'Gulp, NPM, Git, Photoshop, Trello',
+        link: 'https://blackjeezuz.github.io/k2k/'
       }, {
         name: 'Express Finance',
-        subtitle: 'Pure JS',
         filter: 'js',
-        image: require('~/assets/images/Mogo.jpg')
-      }, {
-        name: 'AnyCash',
-        subtitle: 'Vue.js',
-        filter: 'vue',
-        image: require('~/assets/images/Mogo.jpg')
-      }, {
-        name: 'News portal',
-        subtitle: 'React.js',
-        filter: 'react',
-        image: require('~/assets/images/Mogo.jpg')
+        image: require('~/assets/images/express-finance/main.jpg'),
+        images: [
+          require('~/assets/images/express-finance/tarif.jpg'),
+          require('~/assets/images/express-finance/personal.jpg'),
+          require('~/assets/images/express-finance/cart.jpg')
+        ],
+        subtitle: this.$t('projects.express-finance.title'),
+        description: this.$t('projects.express-finance.description'),
+        technologies: 'HTML, CSS, SCSS, jQuery, Ajax, Google map API',
+        tools: 'Gulp, NPM, Git, Photoshop, Trello',
+        link: 'https://blackjeezuz.github.io/express-finance/'
       }]
     }
   },

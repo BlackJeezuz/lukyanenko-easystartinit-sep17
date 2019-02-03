@@ -10,21 +10,31 @@
             :paginationEnabled="false"
             :loop="true"
             :paginationPosition="'bottom-overlay'"
-            @pageChange="handleChange"
           >
             <Slide
-              v-for="(slide, index) in project.slides"
+              v-for="(image, index) in project.images"
               :key="`slide-${index}`"
               class="slider__item"
             >
-              <div class="slider__img" :style="{ backgroundImage: `url(${slide.img})`}" />
+              <div class="slider__img" :style="{ backgroundImage: `url(${image})`}" />
             </Slide>
           </Carousel>
         </header>
-        <transition name="slide-fade" mode="out-in">
-          <main class="popup__content" :key="activeSlide" v-html="project.slides[activeSlide].info" />
-        </transition>
-        <button type="button" class="popup__close btn-default" aria-label="close popup" @click="handleClose" title="close" />
+        <main class="popup-content">
+          <div class="popup-content__description" v-html="project.description" />
+          <div class="popup-content__block">
+            <strong>{{ $t('projects.technologies') }}</strong>
+            <span v-html="project.technologies" />
+          </div>
+          <div class="popup-content__block">
+            <strong>{{ $t('projects.tools') }}</strong>
+            <span v-html="project.tools" />
+          </div>
+        </main>
+        <div class="popup__controlls">
+          <a :href="project.link" target="_blank" class="popup__view">{{ $t('projects.view') }}</a>
+          <button type="button" class="popup__close btn-default" aria-label="close popup" @click="handleClose" title="close" />
+        </div>
       </div>
     </div>
   </transition>
@@ -39,15 +49,7 @@ export default {
       default: () => { return {} }
     }
   },
-  data () {
-    return {
-      activeSlide: 0
-    }
-  },
   methods: {
-    handleChange (slideNumber) {
-      this.activeSlide = slideNumber
-    },
     handleClose () {
       this.$emit('close')
     }
