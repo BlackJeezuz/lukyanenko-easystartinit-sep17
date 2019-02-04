@@ -9,7 +9,7 @@
           data-aos-anchor-placement="top-center"
         >
           <figure class="about__person">
-            <img class="about__img" src="~/static/me.jpg" alt="Ruslan Lukianenko">
+            <img class="about__img" src="~/static/images/RL.jpg" alt="Ruslan Lukianenko">
             <figcaption class="about__caption">{{ $t('about.figcaption') }}</figcaption>
           </figure>
           <p>{{ $t('about.position') }} <a href="#" class="link">{{ $t('about.currentJob') }}</a> {{ $t('about.location') }}.<br>{{ $t('about.text') }} <a href="./files/RuslanL_CV.pdf" class="link" target="_blank">{{ $t('about.cv') }}</a></p>

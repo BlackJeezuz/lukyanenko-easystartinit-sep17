@@ -19,6 +19,19 @@
   }
   &__link {
     display: block;
+    &:hover,
+    &:focus {
+      .fab {
+        animation: hover-anim .5s forwards;
+      }
+      .social__wrap {
+        background-color: $main-color;
+        transform: scale(0.9);
+      }
+    }
+  }
+  &__wrap {
+    display: block;
     width: 55px;
     height: 55px;
     text-align: center;
@@ -27,14 +40,6 @@
     background-color: $dark-blue;
     overflow: hidden;
     transition: background-color .2s;
-    &:hover,
-    &:focus {
-      .fab {
-        animation: hover-anim .5s forwards;
-      }
-      background-color: $main-color;
-      transform: scale(0.9);
-    }
   }
 }
 .created-text {

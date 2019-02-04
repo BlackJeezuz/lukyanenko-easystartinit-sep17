@@ -39,6 +39,7 @@
             </main>
           </li>
         </ul>
+        <div class="projects-placeholder">In progress :)</div>
       </div>
     </div>
     <Popup v-if="activeProject" :project="activeProject" @close="activeProject = null"/>
@@ -85,11 +86,11 @@ export default {
       return [{
         name: 'Astorun',
         filter: 'vue',
-        image: require('~/assets/images/astorun/logo.png'),
+        image: require('~/static/images/astorun/logo.png'),
         images: [
-          require('~/assets/images/astorun/main.jpg'),
-          require('~/assets/images/astorun/bascet.jpg'),
-          require('~/assets/images/astorun/collection.jpg')
+          require('~/static/images/astorun/main.jpg'),
+          require('~/static/images/astorun/bascet.jpg'),
+          require('~/static/images/astorun/collection.jpg')
         ],
         subtitle: this.$t('projects.astorun.title'),
         description: this.$t('projects.astorun.description'),
@@ -99,11 +100,11 @@ export default {
       }, {
         name: 'Any.cash',
         filter: 'vue',
-        image: require('~/assets/images/anycash/logo.jpg'),
+        image: require('~/static/images/anycash/logo.jpg'),
         images: [
-          require('~/assets/images/anycash/main.jpg'),
-          require('~/assets/images/anycash/tarif.jpg'),
-          require('~/assets/images/anycash/bonus.jpg')
+          require('~/static/images/anycash/main.jpg'),
+          require('~/static/images/anycash/tarif.jpg'),
+          require('~/static/images/anycash/bonus.jpg')
         ],
         subtitle: this.$t('projects.anycash.title'),
         description: this.$t('projects.anycash.description'),
@@ -113,11 +114,11 @@ export default {
       }, {
         name: 'K2K',
         filter: 'js',
-        image: require('~/assets/images/k2k/logo.jpg'),
+        image: require('~/static/images/k2k/logo.jpg'),
         images: [
-          require('~/assets/images/k2k/main.jpg'),
-          require('~/assets/images/k2k/personal.jpg'),
-          require('~/assets/images/k2k/credit.jpg')
+          require('~/static/images/k2k/main.jpg'),
+          require('~/static/images/k2k/personal.jpg'),
+          require('~/static/images/k2k/credit.jpg')
         ],
         subtitle: this.$t('projects.k2k.title'),
         description: this.$t('projects.k2k.description'),
@@ -127,17 +128,41 @@ export default {
       }, {
         name: 'Express Finance',
         filter: 'js',
-        image: require('~/assets/images/express-finance/main.jpg'),
+        image: require('~/static/images/express-finance/main.jpg'),
         images: [
-          require('~/assets/images/express-finance/tarif.jpg'),
-          require('~/assets/images/express-finance/personal.jpg'),
-          require('~/assets/images/express-finance/cart.jpg')
+          require('~/static/images/express-finance/tarif.jpg'),
+          require('~/static/images/express-finance/personal.jpg'),
+          require('~/static/images/express-finance/cart.jpg')
         ],
         subtitle: this.$t('projects.express-finance.title'),
         description: this.$t('projects.express-finance.description'),
         technologies: 'HTML, CSS, SCSS, jQuery, Ajax, Google map API',
         tools: 'Gulp, NPM, Git, Photoshop, Trello',
         link: 'https://blackjeezuz.github.io/express-finance/'
+      }, {
+        name: 'GNC',
+        filter: 'js',
+        image: require('~/static/images/gnc/main.jpg'),
+        images: [
+          require('~/static/images/gnc/first.jpg'),
+          require('~/static/images/gnc/second.jpg'),
+          require('~/static/images/gnc/third.jpg')
+        ],
+        subtitle: this.$t('projects.gnc.title'),
+        description: this.$t('projects.gnc.description'),
+        technologies: 'HTML, CSS, SCSS, jQuery, Ajax, Youtube API',
+        tools: 'Gulp, NPM, Git, Photoshop, Trello',
+        link: 'https://blackjeezuz.github.io/gnc/index.html'
+      }, {
+        name: 'MVC',
+        filter: 'mvc vue js',
+        image: require('~/static/images/mvc/logo.png'),
+        images: [
+          require('~/static/images/mvc/vue.jpg'),
+          require('~/static/images/mvc/vanilla.jpg')
+        ],
+        subtitle: this.$t('projects.mvc.title'),
+        description: this.$t('projects.mvc.description')
       }]
     }
   },

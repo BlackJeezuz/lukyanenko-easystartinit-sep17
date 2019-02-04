@@ -133,18 +133,35 @@
   }
   .vue {
     .projects-list__content {
-      background-image: linear-gradient(0deg, rgba(#41B883, 0.8) 0%, rgba(#41B883, 0.8) 100%), url('~@/static/vue.png');
+      background-image: linear-gradient(0deg, rgba(#41B883, 0.8) 0%, rgba(#41B883, 0.8) 100%), url('~@/static/images/vue.png');
     }
   }
   .js {
     .projects-list__content {
       background-size: contain;
-      background-image: linear-gradient(0deg, rgba(#E09F2A, 0.8) 0%, rgba(#E09F2A, 0.8) 100%), url('~@/static/js.png');
+      background-image: linear-gradient(0deg, rgba(#E09F2A, 0.8) 0%, rgba(#E09F2A, 0.8) 100%), url('~@/static/images/js.png');
     }
   }
   .react {
     .projects-list__content {
-      background-image: linear-gradient(0deg, rgba(#0397BF, 0.7) 0%, rgba(#0397BF, 0.7) 100%), url('~@/static/react.png');
+      background-image: linear-gradient(0deg, rgba(#0397BF, 0.7) 0%, rgba(#0397BF, 0.7) 100%), url('~@/static/images/react.png');
     }
   }
+  .mvc {
+    .projects-list__content {
+      background-image: linear-gradient(0deg, rgba(#000, 0.7) 0%, rgba(#000, 0.7) 100%);
+    }
+  }
+}
+.projects-placeholder {
+  display: none;
+  padding: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.mixitup-container-failed ~ .projects-placeholder {
+  display: block;
 }

@@ -57,11 +57,19 @@
     },
     "k2k": {
       "title": "Fast credits and transfers",
-      "description": "<p>K2K it is a project for instant online credits and transfers.</p><p>The site was created without js frameworks. Only jQuery was used from libraries.</p>"
+      "description": "<p>K2K it is a project for instant online credits and transfers.</p><p>The site is created with pure js. Only jQuery was used from libraries.</p>"
     },
     "express-finance": {
       "title": "Instant credits online",
       "description": "<p>Express Finance - online lending and transfer system. More details about the possibilities you can see in your account.</p><p>The site is created with pure js. Only jQuery was used from libraries.</p>"
+    },
+    "gnc": {
+      "title": "Blockchain technology",
+      "description": "<p>GNC it is a US-based Silicon Valley technology company; focused on building the next generation blockchain technology.</p><p>The site is created with pure js. Only jQuery was used from libraries.</p>"
+    },
+    "mvc": {
+      "title": "TODO's mvc",
+      "description": "<p>In my opinion, todo application is the best practical task for a beginner. This is where I begin the study of any framework. Ideal for codestyles review.</p><p><h4>Vanilla todo</h4><div><b>Source: </b><a class='link' target='_blank' href='https://github.com/BlackJeezuz/vanilla-todo'>https://github.com/BlackJeezuz/vanilla-todo</a></div><div><b>Demo: </b><a class='link' target='_blank' href='https://blackjeezuz.github.io/vanilla-todo/app/'>https://blackjeezuz.github.io/vanilla-todo/app/</a></div></p><p><h4>Vue todo</h4><div><b>Source: </b><a class='link' target='_blank' href='https://github.com/BlackJeezuz/vue-todo/src/'>https://github.com/BlackJeezuz/vue-todo/src</a></div><div><b>Demo: </b><a class='link' target='_blank' href='https://blackjeezuz.github.io/vue-todo/'>https://blackjeezuz.github.io/vue-todo/</a></div></p>"
     }
   }
 }

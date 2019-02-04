@@ -21,18 +21,18 @@
           </Carousel>
         </header>
         <main class="popup-content">
-          <div class="popup-content__description" v-html="project.description" />
-          <div class="popup-content__block">
+          <div class="popup-content__block" v-html="project.description" />
+          <div v-if="project.technologies" class="popup-content__block">
             <strong>{{ $t('projects.technologies') }}</strong>
             <span v-html="project.technologies" />
           </div>
-          <div class="popup-content__block">
+          <div v-if="project.tools" class="popup-content__block">
             <strong>{{ $t('projects.tools') }}</strong>
             <span v-html="project.tools" />
           </div>
         </main>
         <div class="popup__controlls">
-          <a :href="project.link" target="_blank" class="popup__view">{{ $t('projects.view') }}</a>
+          <a v-if="project.link" :href="project.link" target="_blank" class="popup__view">{{ $t('projects.view') }}</a>
           <button type="button" class="popup__close btn-default" aria-label="close popup" @click="handleClose" title="close" />
         </div>
       </div>

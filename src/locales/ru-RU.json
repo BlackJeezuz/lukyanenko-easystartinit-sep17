@@ -62,6 +62,14 @@
     "express-finance": {
       "title": "Мгновенные кредиты онлайн",
       "description": "<p>Экспресс финанс - система онлайн кредитования и переводов. ПОдробнее о возможностях вы можете посмотреть в личном кабинете.</p><p>Сайт создан на чистом js. Из библиотек использовалась только jQuery.</p>"
+    },
+    "gnc": {
+      "title": "Блокчейн технология",
+      "description": "<p>GNC является американской технологической компанией в Силиконовой долине, которая сосредоточилась на создании технологии блокчейна следующего поколения</p><p>Сайт создан на чистом js. Из библиотек использовалась только jQuery.</p>"
+    },
+    "mvc": {
+      "title": "TODO's mvc",
+      "description": "<p>По моему мнению, туду приложение - это лучшее практическое задание для новичка. Именно с него я начинаю изучение любого фреймворка. Идеально для ревью кодстайла.</p><p><h4>Vanilla todo</h4><div><b>Source: </b><a class='link' target='_blank' href='https://github.com/BlackJeezuz/vanilla-todo'>https://github.com/BlackJeezuz/vanilla-todo</a></div><div><b>Demo: </b><a class='link' target='_blank' href='https://blackjeezuz.github.io/vanilla-todo/app/'>https://blackjeezuz.github.io/vanilla-todo/app/</a></div></p><p><h4>Vue todo</h4><div><b>Source: </b><a class='link' target='_blank' href='https://github.com/BlackJeezuz/vue-todo/src/'>https://github.com/BlackJeezuz/vue-todo/src</a></div><div><b>Demo: </b><a class='link' target='_blank' href='https://blackjeezuz.github.io/vue-todo/'>https://blackjeezuz.github.io/vue-todo/</a></div></p>"
     }
   }
 }

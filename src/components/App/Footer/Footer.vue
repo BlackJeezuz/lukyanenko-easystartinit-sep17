@@ -10,7 +10,7 @@
             aria-label="Linkedin"
             title="Linkedin"
           >
-            <i class="fab fa-linkedin-in" />
+            <span class="social__wrap"><span class="fab fa-linkedin-in" /></span>
           </a>
         </li>
         <li class="social__item">
@@ -21,7 +21,7 @@
             aria-label="Telegram"
             title="Telegram"
           >
-            <i class="fab fa-telegram-plane" />
+            <span class="social__wrap"><span class="fab fa-telegram-plane" /></span>
           </a>
         </li>
         <li class="social__item">
@@ -32,11 +32,11 @@
             aria-label="Facebook"
             title="Facebook"
           >
-            <i class="fab fa-facebook-f" />
+            <span class="social__wrap"><span class="fab fa-facebook-f" /></span>
           </a>
         </li>
       </ul>
-      <div class="created-text">Created with <i class="fas fa-heart"/> Vue</div>
+      <div class="created-text">Created with <span class="fas fa-heart"/> Vue</div>
       <div class="copy">{{ $t('myname') }} &copy;2018</div>
     </div>
   </footer>

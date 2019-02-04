@@ -21,9 +21,13 @@
     max-height: 900px;
   }
   &-content {
+    @include scrollbar(6px, $active-color);
     padding: 20px;
     p {
       margin: 0;
+    }
+    h4 {
+      margin: 0 0 5px 0;
     }
     p:not(:last-child) {
       margin-bottom: 10px;
@@ -32,7 +36,6 @@
     &__block {
       padding-bottom: 10px;
     }
-
     @media only screen and (max-width : 1040px) {
       padding: 20px;
       height: 50%;
@@ -43,7 +46,8 @@
   }
 
   &__controlls {
-    @extend %flex-sb-c;
+    @extend %flex-c;
+    flex-shrink: 0;
     margin-top: auto;
     padding: 0 20px 10px 20px;
   }
@@ -66,6 +70,7 @@
     position: relative;
     width: 30px;
     height: 30px;
+    margin-left: auto;
     opacity: 0.5;
 
     &:focus {
