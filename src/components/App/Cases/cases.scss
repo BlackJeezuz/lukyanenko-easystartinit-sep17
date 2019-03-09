@@ -110,7 +110,7 @@
 
   &__container {
     backface-visibility: hidden;
-    transition: box-shadow .5s, opacity .5s;
+    transition: box-shadow 0.5s, opacity 0.5s;
 
     &--front {
       padding: 40px 15px;
